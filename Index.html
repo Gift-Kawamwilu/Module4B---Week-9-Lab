@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Gift's Student Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Gift Kawamwilu</h1>
+    <p>Computer Science Student · Tech Enthusiasts · Graphic Designer</p>
+  </header>
+
+  <nav>
+    <a href="#about">📖 About Me</a>
+    <a href="#interests">⭐ Interests & Courses</a>
+    <a href="#contact">📫 Contact & Info</a>
+    <a href="#lab9">🧪 Week 9 Lab</a>
+    <!-- Task 03 target: this button toggles the .dark class on <body> -->
+    <button id="theme-toggle" type="button">🌙 Dark Mode</button>
+  </nav>
+
+  <main>
+    <article>
+      <h2 id="about">About Me</h2>
+      
+      <figure class="profile-image-section">
+
+        <span class="blue-frame">
+          <img src="profile.jpg" 
+               alt="Photo of Gift - CS 361 Student" width="200" height="200">
+        </span>
+      </figure>
+
+      <p id="about-text">Hello! I'm Gift Kawamwilu, a third-year Computer Science student at <strong>Copperbelt University</strong>. I'm passionate about solving problems in my community using technology. Through this initiative, I hope to share my knowledge and inspire others to pursue careers in technology.</p>
+      
+      <p>Other than academics, I participate in sports through ZUSA as a graphic designer and also the Media Director for Bread of Life CBU Fellowship.</p>
+
+      <h2 id="interests">Hobbies & Interests</h2>
+      <ul>
+        <li>🎸 Listening to music</li>
+        <li>♟️ Playing Chess</li>
+        <li>🏃 Riding my bike</li>
+        <li>📚 Reading educational and spiritual books</li>
+        <li>🍳 Listening to podcasts, Ted talks and tech documentaries</li>
+      </ul>
+
+      <h2>📚 Top 3 Academic Courses</h2>
+      <ol>
+        <li><strong>Internet & Web Programming (CS 361)</strong> — Web Developer building mobile applications for clients both local and international for their businesses.</li>
+        <li><strong>Object Oriented Programming (CS 350)</strong> — Built back-end algorithms for mobile apps and programs for regressions testing.</li>
+        <li><strong>Probability, Statistics and Discrete Structures(CS 320)</strong> —  Solving probelms in tech using knowledge of probability, Statistics and Dicrete Math.</li>
+      </ol>
+
+      
+      <!-- WEEK 9 LAB SECTION - "Talking to the Page: DOM, Events & Validation"
+
+         TASK 01 — GRAB & CHANGE -->
+        <div class="lab9-card">
+          <h2>01. Grab & Change</h2>
+          <p>Used querySelector to grab a heading and a paragraph. On page load, changed 
+             the heading's textContent and set the paragraph's style.color. </p>
+        </div>
+
+        <!-- TASK 02 — CLICK COUNTER -->
+        <div class="lab9-card">
+          <h2>02. Click Counter</h2>
+          <button id="count-btn" type="button">Click me</button>
+          <span id="click-count">0</span>
+        </div>
+
+        <!-- Task 04 & 05: BUILD A LIST FROM DATA + LIVE SEARCH FILTER -->
+        <div class="lab9-card">
+          <h2>04 & 05. Course List + Live Search</h2>
+          <input id="search-input" type="text" placeholder="Search courses...">
+          <ul id="course-list"></ul>
+          <button id="add-course-btn" type="button">Add a course</button>
+        </div>
+
+        <!-- TASK 06 — VALIDATE A FORM -->
+        <div class="lab9-card">
+          <h2>06. Sign Up</h2>
+          <form id="signup-form" novalidate>
+            <input id="signup-name" type="text" placeholder="Full name">
+            <input id="signup-email" type="text" placeholder="Email address">
+            <button type="submit">Sign Up</button>
+            <p id="form-message"></p>
+          </form>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <aside>
+    <h3>🌐 Connect & Links</h3>
+    <ul class="links-list">
+      <li>🐙 <a href="https://github.com/Gift-Kawamwilu" target="_blank" rel="noopener noreferrer">GitHub: Gift-Kawamwilu</a></li>
+      <li>🔗 <a href="https://www.linkedin.com/in/gift-kawamwilu-bb256a271" target="_blank" rel="noopener noreferrer">LinkedIn: Gift Kawamwilu</a></li>
+      <li>📧 <a href="https://www.cbu.ac.zm/">Copperbelt University</a></li>
+    </ul>
+    
+    <h3>📖 Academic Details</h3>
+    <dl>
+      <dt>Department</dt>
+      <dd>Copperbelt University — Computer Science</dd>
+      
+      <dt>Year of Study</dt>
+      <dd>3rd Year </dd>
+      
+      <dt>Programme</dt>
+      <dd>Bachelor of Science in Computer Science</dd>
+    </dl>
+    
+    <p class="office-hours">📍 CBU Campus | Riverside, Jambo Drive Road</p>
+  </aside>
+
+  <footer>
+    <p id="contact">📬 Contact me: <a href="giftkawamwilu@gmail.com">giftkawamwilu@gmail.com</a> | © 2026 Gift Kawamwilu — CS361 Student Profile</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
